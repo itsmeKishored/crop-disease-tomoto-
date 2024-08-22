@@ -1,0 +1,170 @@
+/* src/MainHome.css */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes growButton {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  .main-home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  p {
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .scan-button,
+  .find-disease-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .scan-button:hover,
+  .find-disease-button:hover {
+    background-color: #218838;
+    animation: growButton 0.2s ease-in-out forwards;
+  }
+  
+  .upload-input {
+    font-size: 16px;
+    cursor: pointer;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  
+  .find-disease-button {
+    margin-top: 20px;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  /* src/MainHome.css */
+.camera-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .webcam {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid #2c3e50;
+  }
+  
+  .capture-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .capture-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .captured-image-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .captured-image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #2c3e50;
+  }
+  
+  .image-action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .find-disease-button,
+  .discard-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .find-disease-button {
+    background-color: #28a745;
+  }
+  
+  .find-disease-button:hover {
+    background-color: #218838;
+  }
+  
+  .discard-button {
+    background-color: #dc3545;
+  }
+  
+  .discard-button:hover {
+    background-color: #c82333;
+  }
+  
